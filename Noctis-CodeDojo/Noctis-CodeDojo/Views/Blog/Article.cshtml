@@ -1,0 +1,13 @@
+﻿@model Noctis_CodeDojo.Models.ArticleReply
+@{
+    ViewBag.Title = "Article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reply</h2>
+@using (Html.BeginForm("AddReply", "Blog", FormMethod.Post))
+{
+    <input type="text" name="Name" />
+      @Html.TextBoxFor(model => model.NickName)
+    <input type="submit" value="Submit" />
+}

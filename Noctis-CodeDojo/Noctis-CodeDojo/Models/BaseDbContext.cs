@@ -14,6 +14,7 @@ namespace Noctis_CodeDojo.Models
         }
 
         public DbSet<Member> Members { get; set; }
-
+         public DbSet<ArticleReply> ArticleReplys { get; set; }
+        
     }
 }
